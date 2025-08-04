@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpô.exe</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/favIconJokenpo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="./jokenpo.html">Jogar</a>
+        <a href="./curiosidades.html">Curiosidades</a>
+      </nav>
+    </header>
+    <section class="principal-section">
+      <img id="title-image" src="./assets/logoJokenpo.png" width="250px" />
+      <button id="reset-button">
+        <img src="./assets/reiniciar.png" />
+      </button>
+      <p class="choose-your-move">Escolha sua jogada:</p>
+      <div class="button-container">
+        <button onclick="gameWorking(1)" class="button-choice" id="rock-button">
+          <img />
+          <source srcset="rockButton.png" type="image/png" />
+          <img src="./assets/rockButton.png" alt="Rock" />
+        </button>
+        <button
+          onclick="gameWorking(2)"
+          class="button-choice"
+          id="paper-button"
+        >
+          <source srcset="paperButton.png" type="image/png" />
+          <img src="./assets/paperButton.png" alt="Paper" />
+        </button>
+        <button
+          onclick="gameWorking(3)"
+          class="button-choice"
+          id="scissor-button"
+        >
+          <source srcset="scissorsButton.png" type="image/png" />
+          <img src="./assets/scissorsButton.png" alt="Scissor" />
+        </button>
+      </div>
+
+      <div class="result-display">
+        <h3 id="resultCurrentGame">O resultado aparecerá aqui</h3>
+        <div class="result-choices">
+          <div class="user-choice">
+            <p>Sua escolha</p>
+            <img id="user-choice" width="50px" />
+          </div>
+          <div class="machine-choice">
+            <p>Máquina</p>
+            <img id="machine-choice" width="50px" />
+          </div>
+        </div>
+        <p class="result-message"></p>
+      </div>
+
+      <div class="score-display">
+        <h3>Pontuação</h3>
+        <p>Você: <span id="player-score">0</span></p>
+        <p>Máquina: <span id="computer-score">0</span></p>
+      </div>
+    </section>
+    <a
+      href="https://www.linkedin.com/in/paivadanilo/"
+      target="_blank"
+      id="linkedin-link"
+    >
+      <img id="linkedin-logo" src="./assets/linkedinLogo.png" />
+    </a>
+  </body>
+  <script src="script.js"></script>
+</html>
