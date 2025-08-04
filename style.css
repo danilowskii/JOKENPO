@@ -250,8 +250,8 @@ h3 {
 
   .button-container {
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 3px;
+    justify-content: space-around;
+    margin-right: 5px;
   }
 
   .result-message {
