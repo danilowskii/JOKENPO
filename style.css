@@ -249,11 +249,7 @@ h3 {
   }
 
   .button-container {
-    display: flex;
-    flex-direction: row;
     gap: 10%;
-    padding-right: 2px;
-    margin-bottom: 20px;
   }
 
   .result-message {
