@@ -248,6 +248,14 @@ h3 {
     min-width: 85vw;
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    padding-right: 2px;
+    margin-bottom: 20px;
+  }
+
   .result-message {
     font-size: 15px;
     height: 73px;
