@@ -249,7 +249,8 @@ h3 {
   }
 
   .button-container {
-    gap: 10%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .result-message {
