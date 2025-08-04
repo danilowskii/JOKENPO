@@ -85,7 +85,6 @@ a:hover {
 }
 
 .button-container {
-  padding-right: 30px;
   display: flex;
   flex-direction: row;
   gap: 20%;
